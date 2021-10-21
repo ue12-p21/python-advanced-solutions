@@ -72,7 +72,7 @@ def move_snake(snake, direction):
     new_head = (x+dx , y+dy)
     if new_head == FRUIT:
         snake.append(FRUIT)
-        FRUIT = (randint(0, X), randint(0, Y))
+        FRUIT = (randint(0, X-1), randint(0, Y-1))
         pg.display.set_caption(f"Score: {len(snake)}")
     elif new_head in snake:
         quit(snake, "self-bite")

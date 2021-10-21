@@ -62,7 +62,7 @@ def move_snake(snake, direction):
     new_head = ((x+dx) % X, (y+dy) % Y)
     if new_head == FRUIT:
         snake.append(FRUIT)
-        FRUIT = (randint(0, X), randint(0, Y))
+        FRUIT = (randint(0, X-1), randint(0, Y-1))
     else:
         # the last item in snake just vanishes
         _tail = snake.pop(0)
