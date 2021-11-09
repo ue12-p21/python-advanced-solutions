@@ -20,6 +20,9 @@ DIRECTIONS = {
     'LEFT':  (-1, 0),
 }
 
+### en toute rigueur les variables
+# DIRECTION et FRUIT devraient être en minuscules
+
 DIRECTION = DIRECTIONS['RIGHT']
 
 snake = [
